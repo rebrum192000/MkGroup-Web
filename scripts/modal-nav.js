@@ -24,13 +24,16 @@ if(screen.width > 1359) {
 	window.onscroll = function() {
 
 		var sect1 = document.querySelector('.header-info');
+		var main = document.querySelector('.main');
 		var scrolled = window.pageYOffset;
 		var heightSect1 = sect1.offsetHeight;
 
 		if (scrolled >= heightSect1) {
 			modalNav.classList.add("header-nav__fix");
+			main.classList.add("main__fix");
 		} else {
 			modalNav.classList.remove("header-nav__fix");
+			main.classList.remove("main__fix");
 		};
 	};
 };
