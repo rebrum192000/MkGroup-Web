@@ -14,3 +14,20 @@ var certShadow = document.querySelector(".modal__form-shadow");
 		closeBtn.setAttribute("style", "display:none");
 		certShadow.setAttribute("style", "display:none");
 	}
+	certShadow.onclick = function() {
+		certBig.setAttribute("style", "display:none");
+		closeBtn.setAttribute("style", "display:none");
+		certShadow.setAttribute("style", "display:none");
+	}
+
+// 	function zoom(event) {
+//     let zoom = event.currentTarget;
+
+//     event.offsetX ? (offsetX = event.offsetX) : (offsetX = event.touches[0].pageX);
+//     event.offsetY ? (offsetY = event.offsetY) : (offsetX = event.touches[0].pageX);
+
+//     let x = offsetX / zoom.offsetWidth  * 100;
+//     let y = offsetY / zoom.offsetHeight * 100;
+
+//     zoom.style.backgroundPosition = x + "% " + y +"%";
+// }
